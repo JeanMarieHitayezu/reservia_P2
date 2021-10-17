@@ -48,11 +48,13 @@ a {
 nav a {
     padding: 2rem;
     border-top: 3px solid transparent;
+    font-size: 1.3rem;
 }
 nav a:hover {
     border-top-color: #0065FC;
 }
 #logo {
+    height: 55px;
     margin-right:auto;
     cursor: pointer;
 }
@@ -74,5 +76,160 @@ nav a:hover {
     .sub-nav a:hover {
         border-bottom: 3px solid blue;
         border-top-color: transparent;
+    }
+}
+
+/* SECTION SEARCH AND FILTERS */
+#main{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.search-title {
+    font-size: 1.5rem;
+}
+.search-info {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/*  SEARCH FORM  */
+
+.search-icon {
+    display: flex;
+    margin: 1rem 0 2rem 0;
+}
+
+.search-icon i {
+    padding: 1rem 1.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.search-icon input {
+    flex-basis: 12rem;
+    border: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
+    padding: 15px;
+}
+
+.search-icon input::placeholder {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.search-icon button {
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 10rem;
+}
+
+.search-icon button:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.fas.fa-search {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .search-word {
+        display: none;
+    }
+    .fas.fa-search {
+        display: inline;
+        color: white;
+        background-color: #0065FC;
+        padding: 16px;
+        border-radius: 18px;
+        position: relative;
+        right: -20px;
+    }
+    .search-icon button {
+        background-color: white;
+    }
+}
+
+
+/* Mise en forme des filtres*/
+.filters-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.filter {
+    border: 2px solid lightgrey;
+    border-radius: 2.5rem;
+    display: flex;
+    transition: all 400ms ease-in-out;
+    font-size: 1.2rem;
+    height: 3rem;
+    align-items: center;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.filter .fas {
+    color: blue;
+    background-color: #DEEBFF;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: -2px;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter span {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.filter:hover {
+    background-color: blue;
+    transform: scale(1.03);
+}
+
+
+/*  MESSAGERESULT */
+
+.message-result {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.message-result .fas {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid darkgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+}
+@media (max-width: 600px){
+
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        
     }
 }
