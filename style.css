@@ -255,3 +255,170 @@ nav a:hover {
         
     }
 }
+/* HEBERGEMENTS MARSEILLE */
+#lodging {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap:2rem;
+}
+.Marseille-lodging .stars {
+    color: #0065FC;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+#lodging h3 {
+    font-size: 1.1rem;
+    margin: 0px;
+}
+#lodging span{
+    font-size: 1rem;
+}
+.Marseille-lodging {
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding:  0 0.5rem;
+}
+.Marseille-lodging {
+    flex-basis: 68%;
+}
+.popular {
+    flex-basis: 32%;
+}
+.Marseille-title {
+    margin: 2rem 0 0 2rem;
+}
+.Marseille-lodging a {
+    text-decoration: none;
+    transform-origin: 50% 50%;
+    transition: transform 0.1s linear;
+    color:black;
+}
+.Marseille-lodging a:hover {
+    transform: scale(1.03) rotate(0.2deg);
+}
+.city-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 210px 210px ;
+    gap: 2rem;
+    background: #F2F2F2;
+    border-radius: 15px;
+    padding: 1.5rem;
+
+}
+
+/* STYLES OF CARDS */
+.Marseille-lodging .cards {
+    color: black;
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 13rem;
+}
+.Marseille-lodging .image {
+    height: 7.5rem; 
+    width: 100%;
+    padding: 0.3rem;
+}
+.cards {
+    margin: 0;
+    width:15.5rem;
+}
+
+.Marseille-lodging .image-info {
+    height: 5rem;
+    margin: 0.5rem 1rem;
+    font-weight: normal;
+}
+.Marseille-lodging img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 7.5rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 96%;
+    max-height: 100%;
+
+}
+.stars .grey {    
+    color: #F2F2F2;
+}
+
+.Marseille-lodging .info-plus {
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+/* POPULAR */
+
+.aside-title { 
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    margin:  1rem 2rem 0.3rem 1.2rem;
+    padding: 0px;
+}
+.popular {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 15px;
+}
+.popular .card {
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    color: black;
+    transform-origin: 50% 50%;
+    transition: transform 0.1s linear;
+    filter: drop-shadow(0 0 4px #CCC);
+    height: 9rem;
+    margin: 1.2rem;
+    width: auto;
+}
+.popular img {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid white;
+    align-items: center;
+    height: 135px;
+    width: 160px;
+    object-fit: cover;
+}
+.card-img {
+    padding: 0.2rem;
+}
+.popular a:hover {
+    color: black;
+    text-decoration: none;
+    transform: scale(1.02) rotate(0.1deg);
+}
+.img-description {
+    margin: 1rem;
+    font-weight: normal;
+}
+.popular .stars {
+    margin-top: 2.2rem;
+    color: blue;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+    .Marseille-lodging {
+       display: grid;
+       grid-columns: 1fr;
+    }
+    .popular {
+        order: -1;
+    }
+}
+@media (min-width: 501px) and (max-width: 1000px){
+
+}
