@@ -259,7 +259,7 @@ nav a:hover {
 #lodging {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0;
     gap:2rem;
 }
 .Marseille-lodging .stars {
@@ -305,6 +305,7 @@ nav a:hover {
     background: #F2F2F2;
     border-radius: 15px;
     padding: 1.5rem;
+    margin-left: 0.5rem;
 
 }
 
@@ -326,7 +327,7 @@ nav a:hover {
 }
 .cards {
     margin: 0;
-    width:15.5rem;
+    width:16rem;
 }
 
 .Marseille-lodging .image-info {
