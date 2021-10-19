@@ -226,7 +226,29 @@ nav a:hover {
     color: #0065FC;
 }
 @media (max-width: 600px){
-
+    #main {
+        margin-left: 3rem; 
+    }
+    html {
+        font-size: 1.3rem;
+    }
+    #logo {
+        height: 4rem;
+    }
+    .search-icon {
+        margin-top: 2.5rem;
+    }
+     .filters-title {
+         margin-right: 20rem;
+         margin-bottom: -0.1rem;
+     }
+     .filters {
+          margin-top: -1.5rem;
+     }
+     .search-title {
+         font-size: 1.6rem;
+         margin-right: 1.8rem;
+     }     
 }
 @media (min-width: 601px) and (max-width: 1024px) {
     body {
