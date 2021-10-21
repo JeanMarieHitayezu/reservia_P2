@@ -17,12 +17,6 @@ figure {
     padding: 0;
 }
 
-main,
-header {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
 /* Eléments principaux de la page */
 
 h1,
@@ -62,20 +56,6 @@ nav a:hover {
 }
 .nav-activity {
     color:  #000;
-}
-@media (max-width: 600px) {
-    .sub-nav {
-        order: 1;
-        flex-basis: 100%;
-    }
-    .sub-nav a {
-        flex-basis: 50%;
-        text-align: center;
-    }
-    .sub-nav a:hover {
-        border-bottom: 3px solid blue;
-        border-top-color: transparent;
-    }
 }
 
 /* SECTION SEARCH AND FILTERS */
@@ -138,26 +118,8 @@ nav a:hover {
     display: none;
 }
 
-@media (max-width: 600px) {
-    .search-word {
-        display: none;
-    }
-    .fas.fa-search {
-        display: inline;
-        color: white;
-        background-color: #0065FC;
-        padding: 16px;
-        border-radius: 18px;
-        position: relative;
-        right: -20px;
-    }
-    .search-icon button {
-        background-color: white;
-    }
-}
-
-
 /* Mise en forme des filtres*/
+
 .filters-title {
     font-weight: bold;
     font-size: 1.3rem;
@@ -224,36 +186,7 @@ nav a:hover {
     align-items: center;
     color: #0065FC;
 }
-@media (max-width: 600px){
-    #main {
-        margin-left: 3rem; 
-    }
-    html {
-        font-size: 1.3rem;
-    }
-    #logo {
-        height: 4rem;
-    }
-    .search-icon {
-        margin-top: 2.5rem;
-    }
-     .filters-title {
-         margin-right: 20rem;
-         margin-bottom: -0.1rem;
-     }
-     .filters {
-          margin-top: -1.5rem;
-     }
-     .search-title {
-         font-size: 1.6rem;
-         margin-right: 1.8rem;
-     }     
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-    body {
-        
-    }
-}
+
 /* HEBERGEMENTS MARSEILLE */
 #lodging {
     display: flex;
@@ -409,21 +342,9 @@ nav a:hover {
     font-size: 0.8rem;
 }
 
-@media (max-width: 600px) {
-    .Marseille-lodging {
-       display: grid;
-       grid-column: 1;
-    }
-    .popular {
-        order: -1;
-    }
-}
-@media (min-width: 501px) and (max-width: 1000px){
-
-}
 /* ACTIVITITES */
 
-.activities {
+#activity {
     display: grid;
     column-gap: 2rem;
     margin: 2rem 0;
@@ -504,11 +425,11 @@ nav a:hover {
 .touch-card6 {
     height: 11rem;
 }
-.activities h3 {
+#activity h3 {
     margin: 10px 0 0 20px;
     color:black;
 }
-.activities h2 {
+#activity h2 {
     margin-left: 1rem;
 }
 footer {
@@ -544,3 +465,91 @@ footer h3 {
 .assistance {
     margin-right: 15rem;
 }
+
+/* PARTIE RESPONSIVE  */
+
+/* HEADER */
+
+@media (max-width: 600px) {
+    #main {
+        margin-left: 3rem; 
+    }
+    html {
+        font-size: 1.3rem;
+    }
+    #logo {
+        height: 4rem;
+    }
+    .sub-nav {
+        order: 1;
+        flex-basis: 100%;
+    }
+    .sub-nav a {
+        flex-basis: 50%;
+        text-align: center;
+    }
+    .sub-nav a:hover {
+        border-bottom: 3px solid blue;
+        border-top-color: transparent;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+
+/* SECTION RECHERCHER */
+
+@media (max-width: 600px) {
+    .filters-title {
+        margin-right: 20rem;
+        margin-bottom: -0.1rem;
+    }
+    .filters {
+         margin-top: -1.5rem;
+    }
+    .search-title {
+        font-size: 1.6rem;
+        margin-right: 1.8rem;
+    }   
+    .search-word {
+        display: none;
+    }
+    .fas.fa-search {
+        display: inline;
+        color: white;
+        background-color: #0065FC;
+        padding: 16px;
+        border-radius: 18px;
+        position: relative;
+        right: -20px;
+    }
+    .search-icon button {
+        background-color: white;
+    }
+    
+    .search-icon {
+        margin-top: 2.5rem;
+    }
+       
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+ 
+/* SECTION HEBERGEMENTS MARSEILLE */
+
+@media (max-width: 600px) {
+    #lodging {
+        display: flex;
+        flex-direction: column;
+    }
+    .city-list {
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+    .popular {
+        order: -1;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px){
+
+}
+/* SECTION ACTIVITIES */
