@@ -23,7 +23,6 @@ header {
     margin: 0 auto;
 }
 
-
 /* Eléments principaux de la page */
 
 h1,
@@ -413,7 +412,7 @@ nav a:hover {
 @media (max-width: 600px) {
     .Marseille-lodging {
        display: grid;
-       grid-columns: 1fr;
+       grid-column: 1;
     }
     .popular {
         order: -1;
@@ -427,7 +426,7 @@ nav a:hover {
 .activities {
     display: grid;
     column-gap: 2rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .activities-list {
@@ -511,4 +510,37 @@ nav a:hover {
 }
 .activities h2 {
     margin-left: 1rem;
+}
+footer {
+    background-color: #F2F2F2;
+    padding: 0 2rem;
+    height: 20vh;
+    line-height: 180%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+footer{
+    margin-bottom: 2rem;
+}
+
+footer >div {
+    display: flex; 
+    justify-content: space-around;    
+}
+footer a {
+    display: block;
+    color: #000;
+    font-weight: normal;
+}
+footer h3 {
+    margin: 30px 0px 10px;
+}
+.About {
+    margin: 0 50px 0 -80px;
+}
+.living {
+    margin-right: 8rem;
+}
+.assistance {
+    margin-right: 15rem;
 }
