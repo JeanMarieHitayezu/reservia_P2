@@ -342,6 +342,10 @@ nav a:hover {
     font-size: 0.8rem;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> comments
 /* ACTIVITITES */
 
 #activity {
@@ -432,6 +436,12 @@ nav a:hover {
 #activity h2 {
     margin-left: 1rem;
 }
+<<<<<<< HEAD
+=======
+
+/* FOOTER */
+
+>>>>>>> comments
 footer {
     background-color: #F2F2F2;
     padding: 0 2rem;
@@ -446,10 +456,17 @@ footer{
 
 footer >div {
     display: flex; 
+<<<<<<< HEAD
     justify-content: space-around;    
 }
 footer a {
     display: block;
+=======
+    justify-content: space-around;   
+}
+footer a {
+    display: flex;
+>>>>>>> comments
     color: #000;
     font-weight: normal;
 }
@@ -465,6 +482,7 @@ footer h3 {
 .assistance {
     margin-right: 15rem;
 }
+<<<<<<< HEAD
 
 /* PARTIE RESPONSIVE  */
 
@@ -553,3 +571,5 @@ footer h3 {
 
 }
 /* SECTION ACTIVITIES */
+=======
+>>>>>>> comments
