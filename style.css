@@ -426,7 +426,7 @@ nav a:hover {
 .activities {
     display: grid;
     column-gap: 2rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .activities-list {
@@ -504,10 +504,10 @@ nav a:hover {
 .touch-card6 {
     height: 11rem;
 }
-.activities h3 {
+#activity h3 {
     margin: 10px 0 0 20px;
     color:black;
 }
-.activities h2 {
+#activity h2 {
     margin-left: 1rem;
 }
