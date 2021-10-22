@@ -342,10 +342,7 @@ nav a:hover {
     font-size: 0.8rem;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> comments
 /* ACTIVITITES */
 
 #activity {
@@ -436,12 +433,9 @@ nav a:hover {
 #activity h2 {
     margin-left: 1rem;
 }
-<<<<<<< HEAD
-=======
 
 /* FOOTER */
 
->>>>>>> comments
 footer {
     background-color: #F2F2F2;
     padding: 0 2rem;
@@ -456,17 +450,10 @@ footer{
 
 footer >div {
     display: flex; 
-<<<<<<< HEAD
     justify-content: space-around;    
 }
 footer a {
-    display: block;
-=======
-    justify-content: space-around;   
-}
-footer a {
     display: flex;
->>>>>>> comments
     color: #000;
     font-weight: normal;
 }
@@ -482,19 +469,28 @@ footer h3 {
 .assistance {
     margin-right: 15rem;
 }
-<<<<<<< HEAD
 
-/* PARTIE RESPONSIVE  */
-
-/* HEADER */
+/* PARTIE RESPONSIVE */
 
 @media (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        margin:0;
+        padding: 0;
+    }
     #main {
-        margin-left: 3rem; 
+        box-sizing: border-box;
     }
     html {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        box-sizing: border-box;
     }
+}
+
+ /* HEADER */
+
+ @media (max-width: 600px) {
     #logo {
         height: 4rem;
     }
@@ -510,24 +506,29 @@ footer h3 {
         border-bottom: 3px solid blue;
         border-top-color: transparent;
     }
-}
-@media (min-width: 601px) and (max-width: 1024px) {
+    
 }
 
 /* SECTION RECHERCHER */
 
-@media (max-width: 600px) {
+@media (max-width: 600px){
+    .find-your-lodge {
+        margin: 0 2rem;
+    }
     .filters-title {
-        margin-right: 20rem;
-        margin-bottom: -0.1rem;
-    }
-    .filters {
-         margin-top: -1.5rem;
-    }
-    .search-title {
-        font-size: 1.6rem;
-        margin-right: 1.8rem;
-    }   
+         margin-right: 20rem;
+         margin-bottom: -0.1rem;
+     }
+     .filters {
+          margin-top: -1.5rem;
+     }
+     .filter {
+         margin-right: 0.6rem;
+     }
+     .search-title {
+         font-size: 1.6rem;
+         margin-right: 1.8rem;
+     }     
     .search-word {
         display: none;
     }
@@ -543,33 +544,129 @@ footer h3 {
     .search-icon button {
         background-color: white;
     }
-    
     .search-icon {
         margin-top: 2.5rem;
     }
-       
 }
-@media (min-width: 601px) and (max-width: 1024px) {
-}
- 
+
 /* SECTION HEBERGEMENTS MARSEILLE */
 
 @media (max-width: 600px) {
     #lodging {
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Marseille-lodging {
+        background-color: white;
     }
     .city-list {
        display: grid;
        grid-template-columns: 1fr;
+       grid-template-rows: repeat(6, 15rem);
+       gap: 0.1rem;
+       background-color: white;
+       margin: 0 auto;
+    }
+    .city-list a {
+        width: 100%;
+        height: 14rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .city-list .cards {
+        width: 100%;
+        height: 13rem;
+    }
+    .city-list img {
+        width: 98%;
+    }
+    .city-list .image-info {
+        height: 5rem;
     }
     .popular {
         order: -1;
+        border-radius: 0;
+    }
+    .popular img {
+        max-width: 100%;
+        height: 100%;
+    }
+    .popular .img-description {
+        max-width: 50%;
+        min-width: 50%;
     }
 }
 @media (min-width: 601px) and (max-width: 1024px){
 
 }
+
 /* SECTION ACTIVITIES */
-=======
->>>>>>> comments
+@media (max-width: 600px) {
+    .activities-list {
+        display: grid;
+        row-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 15rem);
+        margin-bottom: 60rem;
+    }
+    .activities-list a {
+        grid-column: span 1;
+        grid-row: span 1;
+        margin: 0.1rem 1.5rem; 
+        height: 13rem;      
+    }
+    .activities-list img {
+       max-width: 100%;
+       max-height: 9rem;        
+    }
+    .act-card1 {
+        grid-row: 1/2;
+    }
+    .act-card2 {
+        grid-row: 2/3;
+    }
+    .act-card3 {
+        grid-row: 3/4;
+    }
+    .act-card3 img {
+        height: 10rem;
+    }
+    .act-card4 {
+        grid-row: 4/5;
+    }
+    .act-card5 {
+        grid-row: 6/7; 
+    }
+    .act-card6 {
+        grid-row: 7/8;  
+    }
+}
+
+/* FOOTER */
+@media (max-width: 600px) {
+    footer {
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-groups {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        background-color: #F2F2F2;
+        padding: 0 0 0 50px;
+    }
+    .About {
+        margin-left: 0.5rem;
+    }
+}
