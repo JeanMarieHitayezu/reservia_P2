@@ -192,7 +192,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    gap:2rem;
+    gap: 2rem;
 }
 .Marseille-lodging .stars {
     color: #0065FC;
@@ -222,8 +222,6 @@ nav a:hover {
 }
 .Marseille-lodging a {
     text-decoration: none;
-    transform-origin: 50% 50%;
-    transition: transform 0.1s linear;
     color:black;
 }
 .Marseille-lodging a:hover {
@@ -246,7 +244,7 @@ nav a:hover {
     color: black;
     background-color: white;
     border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 0 16px #0000002E;
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
@@ -273,7 +271,8 @@ nav a:hover {
     height: 7.5rem;
     object-fit: cover;
     max-width: 100%;
-    width: 96%;
+    width: 95%;
+    margin: 2px;
     max-height: 100%;
 
 }
@@ -308,10 +307,8 @@ nav a:hover {
     border-radius: 25px;
     display: flex;
     color: black;
-    transform-origin: 50% 50%;
-    transition: transform 0.1s linear;
     filter: drop-shadow(0 0 4px #CCC);
-    height: 9rem;
+    height: 16vh;
     margin: 1.2rem;
     width: auto;
 }
@@ -320,7 +317,7 @@ nav a:hover {
     border-top-left-radius: 20px;
     border: 2px solid white;
     align-items: center;
-    height: 135px;
+    height: 138px;
     width: 160px;
     object-fit: cover;
 }
@@ -337,7 +334,7 @@ nav a:hover {
     font-weight: normal;
 }
 .popular .stars {
-    margin-top: 2.2rem;
+    margin-top: 2.8rem;
     color: blue;
     font-size: 0.8rem;
 }
@@ -482,17 +479,16 @@ footer h3 {
     #main {
         box-sizing: border-box;
     }
-    html {
-        font-size: 1.1rem;
-        box-sizing: border-box;
+    h2 {
+        font-size: 20px;
     }
-}
-
+    h3 {
+        font-size: 16px;
+    }
  /* HEADER */
-
- @media (max-width: 600px) {
+ 
     #logo {
-        height: 4rem;
+        height: 8rem;
     }
     .sub-nav {
         order: 1;
@@ -507,11 +503,8 @@ footer h3 {
         border-top-color: transparent;
     }
     
-}
-
 /* SECTION RECHERCHER */
 
-@media (max-width: 600px){
     .find-your-lodge {
         margin: 0 2rem;
     }
@@ -526,9 +519,12 @@ footer h3 {
          margin-right: 0.6rem;
      }
      .search-title {
-         font-size: 1.6rem;
+         font-size: 1.5rem;
          margin-right: 1.8rem;
-     }     
+     }  
+     .search-info {
+         font-size: 1.1rem;
+     }   
     .search-word {
         display: none;
     }
@@ -541,24 +537,25 @@ footer h3 {
         position: relative;
         right: -20px;
     }
+    .message-result .fas {
+        width: 2.3rem;
+        height: 2rem;
+    }
     .search-icon button {
         background-color: white;
     }
     .search-icon {
         margin-top: 2.5rem;
     }
-}
 
 /* SECTION HEBERGEMENTS MARSEILLE */
 
-@media (max-width: 600px) {
     #lodging {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
-    }
-    
+    }    
     .Marseille-lodging {
         background-color: white;
     }
@@ -576,10 +573,6 @@ footer h3 {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     .city-list .cards {
         width: 100%;
@@ -595,21 +588,22 @@ footer h3 {
         order: -1;
         border-radius: 0;
     }
+    .popular .card {
+        height: 9rem;
+    }
     .popular img {
-        max-width: 100%;
-        height: 100%;
+        width: 7rem;
+        min-width: 100%;
+        height: 98%;
+        object-fit: cover;
     }
     .popular .img-description {
-        max-width: 50%;
+        max-width: 75%;
         min-width: 50%;
     }
-}
-@media (min-width: 601px) and (max-width: 1024px){
 
-}
+    /* SECTION ACTIVITIES */
 
-/* SECTION ACTIVITIES */
-@media (max-width: 600px) {
     .activities-list {
         display: grid;
         row-gap: 0.5rem;
@@ -648,10 +642,8 @@ footer h3 {
     .act-card6 {
         grid-row: 7/8;  
     }
-}
 
 /* FOOTER */
-@media (max-width: 600px) {
     footer {
         box-sizing: border-box;
         font-size: 1.1rem;
@@ -665,8 +657,12 @@ footer h3 {
         max-width: 1440px;
         background-color: #F2F2F2;
         padding: 0 0 0 50px;
+        background-color: blue;
     }
     .About {
         margin-left: 0.5rem;
     }
+}
+@media (min-width: 601px) and (max-width: 1024px){
+
 }
