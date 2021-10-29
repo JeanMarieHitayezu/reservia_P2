@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
 }
 
-figure {
+img {
     margin: 0;
     padding: 0;
 }
@@ -485,7 +485,7 @@ footer h3 {
         box-sizing: border-box;
     }
     h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
     h3 {
         font-size: 16px;
@@ -544,12 +544,13 @@ footer h3 {
         right: -20px;
     }
     .message-result .fas {
-        width: 2.3rem;
+        margin-right: 1rem;
+        width: 3rem;
         height: 2rem;
     }
     .search-icon button {
         background-color: white;
-        margin-left: -4rem;
+        margin-left: -3rem;
     }
     .search-icon {
         margin-top: 2.5rem;
@@ -562,7 +563,10 @@ footer h3 {
         flex-direction: column;
         margin: 0;
         padding: 0;
-    }    
+    } 
+    #lodging h3 {
+        font-size: 1.3rem;
+    }   
     .Marseille-lodging {
         background-color: white;
     }
@@ -596,17 +600,23 @@ footer h3 {
         border-radius: 0;
     }
     .popular .card {
-        height: 9rem;
+        height: 7rem;
+        height: auto;
+        max-height: 98%;
+        min-height: 90%;
+        width: 7rem;
+        width: 90%;
     }
     .popular img {
         width: 7rem;
-        min-width: 100%;
-        height: 98%;
-        object-fit: cover;
+        min-height: 98%;
+        min-width: 30%;
     }
     .popular .img-description {
-        max-width: 75%;
-        min-width: 50%;
+        margin-left: 2rem;
+    }
+    .popular .stars {
+        margin-top: 4rem;
     }
 
     /* SECTION ACTIVITIES */
@@ -663,6 +673,7 @@ footer h3 {
         flex-direction: column;
         background-color: #F2F2F2;
         padding: 0 0 0 50px;
+        min-width: 600px;
     }
     .About {
         margin-left: 0.5rem;
@@ -798,6 +809,6 @@ footer h3 {
 }
 @media (min-width: 1025px) and (max-width: 1400px) {
     .popular .stars {
-        margin: 0;
+        margin: auto;
     }
 }
